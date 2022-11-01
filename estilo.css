@@ -1,0 +1,231 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1{
+    margin: 0px;
+    border: 3px dotted #0f1891;
+    background-color: rgb(226, 226, 39);
+    font-size: 60px;
+    color: black; 
+    text-align: center; 
+    border-radius: 50%;
+}
+.imagem_principal {
+    margin: 30px 50px 20px 50px;
+    width: 1080px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    
+}
+.central {
+    background-color: rgb(215, 239, 245);
+    text-align: center;
+}
+.descricao {
+    text-align: center;
+    padding: 0px 20px 20px 20px;
+    color: black;
+}
+ul, ol {
+    list-style: none;
+}
+body {
+    background-color: #fff;
+    color: #fff;
+}
+.timeline {
+    padding: 0px 100px;
+    position: relative;
+    width: 100%;
+}
+.timeline ul li {
+    position: relative;
+    width: 50%;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    height: 80%;
+    width: 4px;
+    background-color: #fff;
+    left: 50%;
+    top: 10%;
+}
+.timeline ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear: both;
+}
+.timeline ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+}
+.timeline ul li:nth-child(odd) .content{
+    margin-right: 100px;
+}
+.timeline ul li:nth-child(even) .content{
+    margin-left: 100px;
+}
+.timeline ul::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.timeline ul li:nth-child(odd)::before{
+    content: '';
+    position: absolute;
+    height: 157px;
+    width: 157px;
+    background-color: black;
+    border-radius: 50%;
+    right: -79px;
+    /*this left is the negative of total width of this+width of 
+    timeline::before */
+    top: 50%;
+    transform: translate(0%, -50%);
+    border: 4px solid #fff;  
+}
+.timeline ul li:nth-child(even)::before{
+    content: '';
+    position: absolute;
+    height: 157px;
+    width: 157px;
+    background-color: black;
+    border-radius: 50%;
+    left: -79px;
+    /*this left is the negative of total width of this+width of 
+    timeline::before */
+    top: 50%;
+    transform: translate(0%, -50%);
+    border: 4px solid #fff;  
+}
+.content1 {
+    background-color: #0f1891;
+    padding: 50px 100px;
+}
+.content2 {
+    background-color: #eb2626;
+    padding: 50px 100px;
+}
+.content3 {
+    background-color: #225516;
+    padding: 50px 100px;
+}
+.content4 {
+    background-color: #beb209;
+    padding: 50px 100px;
+}
+.content5 {
+    background-color: #361681;
+    padding: 50px 100px;
+}
+.content6 {
+    background-color: #252738;
+    padding: 50px 100px;
+}
+.content7 {
+    background-color: #d12e2e;
+    padding: 50px 100px;
+}
+.timeline ul li:nth-child(1)::before {
+    background-image: url(img/imgCap.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.timeline ul li:nth-child(2)::before {
+    background-image: url(img/imgHom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.timeline ul li:nth-child(3)::before {
+    background-image: url(img/imgHulk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.timeline ul li:nth-child(4)::before {
+    background-image: url(img/imgThor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.timeline ul li:nth-child(5)::before {
+    background-image: url(img/imgViuva.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.timeline ul li:nth-child(6)::before {
+    background-image: url(img/imgGav.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.timeline ul li:nth-child(7)::before {
+    background-image: url(img/imgHomi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.mais_infos {
+    background-color: rgb(112, 109, 105);
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+}
+.link {
+    color: #4dbd34;
+}
+.link:hover {
+    color: #d12e2e;
+}
+/*.link:visited {
+    color:#373f8a;
+}*/
+.galeria {
+    font-size: 30px;
+    color: rgb(25, 143, 247);
+    margin-top: 30px;
+    padding-top: 20px;
+    background-color:  rgb(215, 239, 245);
+    text-align: center;
+    height: 700px;
+ 
+}
+
+#card {
+   
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transition: all .5s;
+}
+
+.face {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#front {
+    transform: rotateY(180deg);
+}
+
+#back2 {
+    margin: 240px;
+    position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
